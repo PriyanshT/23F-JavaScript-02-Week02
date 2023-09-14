@@ -19,25 +19,56 @@
     /* STEP 1: Declare variables
 	Use a-z, 0-9, A-Z and underscores, avoiding reserved names
 	All program variables are generally declared at the beginning (called 'hoisting') */
-
+    var myName;
+    var myAge;
     /* STEP 2: Initialize variables
 	Don't confuse a variable with no value with one that doesn't exist at all */
-
+    myName = "Priyansh";
+    myAge = 16;
     /* STEP 3: Updating variables
 	Once a variable has been declared, this can be done any time */
-
+    myAge = 80;
+    myAge = "Eighty";
     // STEP 4: Variable types
     // Numbers
-
+    var num1 = 50;
+    var num2 = 20.9999;
+    consoleLogging(num1);
+    consoleLogging(num2);
+    
     // Strings (use '' or "")
-
+    var string1 = "Check1";
+    consoleLogging(string1);
+    
     // Booleans
-
+    var bool1 = true;
+    consoleLogging(bool1);
+    var bool2 = "false";
+    consoleLogging(bool2);
+    
     // Arrays
-
+    var colorArray = ["red", "blue", "green"]
+    consoleLogging(colorArray)
+    consoleLogging(colorArray[1])
+    var numArray = [20, 30, 40]
+    consoleLogging(numArray)
+    consoleLogging(numArray[2])
+    
     // Objects
+    var movieObject = {
+        movieName: "Avengers",
+        runTime: 120,
+        writers: {
+            lead: "Abc Xyz",
+            assistant: "Qwe Rty",
+        }
+    };
+    consoleLogging(movieObject);
 
     // STEP 5: Typing (JavaScript is a loosely-typed language)
+    function consoleLogging(val){
+        return console.log(val + ": " + typeof(val));
+    }
 </script>
 
 </html>
