@@ -14,14 +14,29 @@
 <script>
     /* STEP 1: Number types (integer, float, and double)
     declare and initialize an integer and a float, then in the console, reveal the number type with typeof(varName) */
-
+    var num1 = 50;
+    var num2 = 19.9999;
     // Note - there are also different number systems: binary, octal, and hexadecimal
 
     /* STEP 2: Arithmetic operators
     + (addition), - (subtraction), * (multiplication), / (division), % (remainder or modulo) */
+    var num1 = 20;
+    var num2 = 4;
+
+    var sum = num1 + num2;
+    console.log("sum: " + sum);
+    var diff = num1 - num2;
+    console.log("diff: " + diff);
+    var product = num1 * num2;
+    console.log("product: " + product);
+    var division = num1 / num2;
+    console.log("division: " + division);
+    var modulo = num1 % num2;
+    console.log("modulo: " + modulo);
 
     // Try declaring and initializing a couple of variables as numbers
-
+    // var temp;
+    // temp = 'something';
     /* OR… num1 * num2 / 8 + 2 - 0.5; */
 
     /* Keep in mind operator precedence, just like you were taught in math class (*, /, +, -)
@@ -29,18 +44,50 @@
 
     /* If you want to avoid this precedence, use parenthesis
     (num1 + num2) * 5 - 25 */
-
+    var num3 = (num1 + num2) / num1;
+    console.log("precedence: " + num3);
+    
     /* STEP 3: Increment and decrement operators
     ++ and -- are mostly found inside loops to move a counter variable to the next value when needed, either up or down. */
+    var num4 = 20;
+    console.log(num4++);
+    console.log(++num4);
+    console.log(num4--);
+    console.log(--num4);
 
     // Note 1 - you cannot increment/decrement a number directly
     // Note 2 - typing num++ or num-- in the console will output the number before incrementing or decrmenting - try ++num or --num, instead
 
     /* STEP 4: Assignment Operators
     = (assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment) */
+    var num5 = 30;
+    var final = 50;
+    final += num5; // final = final + num5;
+    console.log(final);
+    final -= num5; // final = final - num5;
+    console.log(final);
+    final *= num5; // final = final * num5;
+    console.log(final);
+    final /= num5; // final = final / num5;
+    console.log(final);
 
     /* STEP 5: Comparison Operators
     ===	(strict equality), !==	(strict-non-equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
+    var num6 = 5;
+    var num6a = "5";
+    var num6b = ["5"];
+    var num6c = [5];
+
+    console.log(num6 == num6a);
+    console.log(num6b == num6a);
+    console.log(num6 === num6a);
+    console.log(num6 !== num6a);
+    console.log(num6 != num6a);
+    console.log(num6 > 6);
+    console.log(num6 < 6);
+    console.log(num6 <= 6);
+    console.log(num6 >= 6);
+    
 </script>
 
 </html>
