@@ -15,20 +15,38 @@
     var output = document.querySelector("p");
     output.textContent = 10;
     /* STEP 1: Creating Strings */
-
+    var string1 = "Hello, How are you?";
+    var string1 = 'Hello, How are you?';
+    output.textContent = string1;
     // Note - whether you use 'single' or "double" quotes is a personal preference - try to be consistent
 
     /* STEP 2: Escaping Characters */
+    string1 = 'Hello, How are you? It\'s cold in here.'
+    // string1 = 'Hello, How are you? It\\\'s cold in here.'
+    // string1 = "Hello, How are you? It's cold in here."
+    output.textContent = string1;
 
     /* STEP 3: Concatenation */
+    output.textContent = string1 + " " + " I am good " + 25;
+    // output.textContent = "25" + 25;
 
     /* STEP 4: Numbers and Strings */
-
     // numbers can be converted to strings
+    output.textContent = "Check " + 50;
 
     // strings can be converted to numbers, too
+    output.textContent = 25 + Number("25");
 
     // and back again, if we want
+    var num1 = 25;
+    output.textContent = num1.toString() + String(num1);
+    // output.textContent = (25).toString() + String(num1);
+    // console.log("25");
+    // console.log(typeof 25);
+
+    // num50 = 15
+    // console.log(num50)
+    // num50 = 16
 </script>
 
 </html>
